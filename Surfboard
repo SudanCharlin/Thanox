@@ -1,0 +1,21 @@
+[
+
+{
+
+"name": "Surfboard保活",
+
+"description": "Surfboard被杀时，调用一次Deeplink启动",
+
+"priority": 1,
+
+"condition": "pkgKilled == true && pkgName == \"com.getsurfboard\"",
+
+"actions": [
+
+"su.exe(\"am start -d surfboard:///start\")"
+
+]
+
+}
+
+] 
