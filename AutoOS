@@ -1,0 +1,21 @@
+[
+
+{
+
+"name": "传感器",
+
+"description": "打开应用关闭传感器，关闭应用启动传感器，使用全局变量SK",
+
+"priority": 1,
+
+"condition": "if(frontPkgChanged == true && globalVarOf$SK.contains(to)) { su.exe(\"service call sensor_privacy 9 i32 1\"); ui.showShortToast(\"Sensors off\")} else if (frontPkgChanged == true && globalVarOf$SK.contains(from)) { su.exe(\"service call sensor_privacy 9 i32 0\");ui.showShortToast(\"Sensors on\") }",
+
+"actions": [
+
+""
+
+]
+
+}
+
+] 
