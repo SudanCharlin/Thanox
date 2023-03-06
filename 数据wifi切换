@@ -1,0 +1,19 @@
+[
+
+{
+
+"name": "数据和wifi自动切换开关",
+
+"description": " 数据和wifi自动切换开关 ",
+
+"priority": 1,
+
+"condition": "if( wifiStateChanged == true && wifiState.ssid == null && data.isDataEnabled() == false) {( ui.showShortToast(\"打开数据流量\") + data.setDataEnabled(true)+hw.disableWifi())} else if ( wifiStateChanged == true && wifiState.enabled == true && wifiState.ssid != null && data.isDataEnabled()== true) { (ui.showShortToast(\"关闭数据流量\") + data.setDataEnabled(false) )}",
+
+"actions": [""
+
+]
+
+}
+
+] 
