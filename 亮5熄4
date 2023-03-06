@@ -1,0 +1,23 @@
+[
+
+{
+
+"name": "开4G",
+
+"description": "在解锁或锁定设备时自动在 5G 和 4G 网络之间切换",
+
+"priority": 2,
+
+"delay": 1000,
+
+"condition": "!device.isScreenOn()",
+
+"actions": [
+
+"telephony.setPreferredNetworkType(telephony.NETWORK_MODE_LTE_ONLY);"
+
+]
+
+}
+
+]
