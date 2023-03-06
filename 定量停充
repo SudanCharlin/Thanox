@@ -1,0 +1,23 @@
+[
+
+{
+
+"name": "充电停止",
+
+"description": "电量达到90后，延时30秒，停止充电",
+
+"priority": 1,
+
+"delay":30000,
+
+"condition": "isCharging==true && batteryChanged == true && batteryLevel == 90",
+
+"actions": [ "su.exe(\"echo 1 > /sys/class/power_supply/battery/input_suspend\");",
+
+"ui.showShortToast(\"充电已停止\");"
+
+]
+
+}
+
+]
